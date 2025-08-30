@@ -39,5 +39,13 @@ $language = getUserPreference('language');
                 <?php endif; ?>
             </div>
         </nav>
+
+<div class="nav-links">
+    <a href="../index.php"><?php echo getTranslation('Home', 'ပင်မစာမျက်နှာ'); ?></a>
+    <a href="series.php"><?php echo getTranslation('Series', 'စီးရီးများ'); ?></a>
+    <a href="history.php"><?php echo getTranslation('History', 'ဖတ်ခဲ့သည်များ'); ?></a>
+    <!-- ... rest of navigation ... -->
+</div>
+
     </header>
     <main>
