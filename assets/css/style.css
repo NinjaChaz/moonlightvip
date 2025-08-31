@@ -742,3 +742,233 @@ nav a {
 .mb-20 {
     margin-bottom: 20px;
 }
+
+/* Admin Specific Styles */
+.alert-error {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    border: 1px solid #f5c6cb;
+}
+
+.badge-admin {
+    background-color: #007bff;
+    color: white;
+}
+
+.badge-user {
+    background-color: #6c757d;
+    color: white;
+}
+
+.status.active {
+    color: #28a745;
+}
+
+.status.inactive, .status.banned {
+    color: #dc3545;
+}
+
+/* Chapters List */
+.chapters-list {
+    margin-top: 20px;
+}
+
+.chapter-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.chapter-info h4 {
+    margin-bottom: 5px;
+}
+
+.chapter-info p {
+    margin-bottom: 3px;
+    font-size: 0.9rem;
+}
+
+.image-count, .ouo-link {
+    font-size: 0.8rem;
+    opacity: 0.7;
+}
+
+.ouo-link a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.ouo-link a:hover {
+    text-decoration: underline;
+}
+
+.btn-view {
+    background-color: #17a2b8;
+}
+
+/* Banners List */
+.banners-list {
+    margin-top: 20px;
+}
+
+.banner-item {
+    display: flex;
+    gap: 15px;
+    padding: 15px;
+    border-bottom: 1px solid var(--border-color);
+    align-items: center;
+}
+
+.banner-image {
+    flex: 0 0 200px;
+}
+
+.banner-image img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+.banner-info {
+    flex: 1;
+}
+
+.banner-info p {
+    margin-bottom: 5px;
+}
+
+.order-input {
+    width: 60px;
+    padding: 5px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.banner-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btn-update {
+    background-color: #ffc107;
+    color: #212529;
+}
+
+/* Notifications List */
+.notifications-list {
+    margin-top: 20px;
+}
+
+.notification-item {
+    padding: 15px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.notification-item.active {
+    background-color: rgba(40, 167, 69, 0.1);
+}
+
+.notification-item.inactive {
+    background-color: rgba(108, 117, 125, 0.1);
+}
+
+.notification-content p {
+    margin-bottom: 5px;
+}
+
+.notification-meta {
+    font-size: 0.8rem;
+    opacity: 0.7;
+    margin-top: 10px;
+}
+
+.notification-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.btn-status {
+    background-color: #6c757d;
+}
+
+/* Users List */
+.users-list {
+    margin-top: 20px;
+}
+
+.user-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.user-item.banned {
+    background-color: rgba(220, 53, 69, 0.1);
+}
+
+.user-info h4 {
+    margin-bottom: 5px;
+}
+
+.user-meta {
+    font-size: 0.8rem;
+    opacity: 0.7;
+}
+
+.user-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-reset {
+    background-color: #fd7e14;
+}
+
+/* Responsive Styles for Admin */
+@media (max-width: 768px) {
+    .chapter-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    
+    .banner-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .banner-image {
+        flex: 0 0 auto;
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .banner-actions {
+        flex-direction: row;
+        align-self: flex-end;
+    }
+    
+    .notification-actions {
+        flex-wrap: wrap;
+    }
+    
+    .user-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    
+    .user-actions {
+        align-self: flex-end;
+    }
+}
